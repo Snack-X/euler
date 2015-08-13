@@ -16,6 +16,6 @@ print grid[SIZE][SIZE]
 ###
 # C(40, 20) = 20! / 40!(40-20)!
 
-import math
+import euler
 
-print math.factorial(SIZE * 2) // (math.factorial(SIZE) * math.factorial(SIZE))
+print euler.choose(SIZE * 2, SIZE)

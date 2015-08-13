@@ -1,17 +1,11 @@
-def countDivisors(n):
-  count = 0
-  for i in range(1, int(n ** 0.5)):
-    if n % i == 0:
-      count += 1
-
-  return count * 2
+import euler
 
 n = 1
 
 while True:
   tri = (n * (n + 1)) / 2
 
-  if countDivisors(tri) > 500:
+  if euler.divisors_count(tri) > 500:
     print tri
     break
 

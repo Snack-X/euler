@@ -2,7 +2,7 @@ count = 0
 prime = []
 num = 1
 
-def isPrime(n):
+def is_prime(n):
   for i in prime:
     if n % i == 0:
       return False

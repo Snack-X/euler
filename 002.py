@@ -1,10 +1,8 @@
-total = 0
-a = 1
-b = 1
+import euler
 
-while b < 4000000:
-  if b % 2 == 0:
-    total += b
-  a, b = b, a + b
-
-print total
+print sum(
+  filter(
+    lambda n: n % 2 == 0,
+    euler.fibonacci_to_n(4000000)
+  )
+)

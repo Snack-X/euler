@@ -1,12 +1,11 @@
+import euler
+
 print sum(
   map(
     int,
     list(
       str(
-        reduce(
-          lambda a, b: a * b,
-          range(1, 101)
-        )
+        euler.factorial(100)
       )
     )
   )

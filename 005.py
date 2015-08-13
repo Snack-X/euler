@@ -1,10 +1,6 @@
-from fractions import gcd
+import euler
 
 to = 20
-
-def lcm(a, b):
-  return a * b // gcd(a, b)
-
-ans = reduce(lcm, range(1, to + 1))
+ans = reduce(euler.lcm, range(1, to + 1))
 
 print ans
